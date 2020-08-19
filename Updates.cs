@@ -12,7 +12,7 @@ namespace UmbraRoR
             try
             {
                 var client = new GitHubClient(new ProductHeaderValue("UmbraUpdateCheck"));
-                var releases = await client.Repository.Release.GetAll("Acher0ns", "Umbra-Mod-Menu").ConfigureAwait(false);
+                var releases = await client.Repository.Release.GetAll("Mochongli", "Umbra-Mod-Menu").ConfigureAwait(false);
                 var latest = releases[0];
                 latestVersion = latest.TagName;
 
